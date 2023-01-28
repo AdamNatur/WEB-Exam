@@ -1,0 +1,15 @@
+:root{
+    font-family: 'Barlow', sans-serif;
+    --main-color:#2A2A2A;
+    --main-color-reverse:#FFFFFF;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+body{
+    box-sizing:border-box;
+    background-color:#0B1C47;
+}
+
+
+
