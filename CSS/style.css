@@ -189,6 +189,11 @@ fieldset{
         display: none;
     }
 
+    .section1Div{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
 }
 
 
