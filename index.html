@@ -28,35 +28,73 @@
 </head>
 <body>
     <header>
-        <div class = "identify">
-            <a href="#" >
-                <p>Log in</p>
-            </a>
-            <button class = "SignUpBtn">SIGN UP</button>
+        <div style = "display: flex; flex-direction: row; justify-content:space-between; margin:3rem">
+            <div class = "burger"> 
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "navlist">
+                <li>About</li>
+                <li>Why Begin</li>
+                <li>Features</li>
+                <li>Contact</li>
+            </div>
+            <div class = "identify">
+                <a href="#" style = "text-decoration: none">
+                    <p class = "LogIn" >Log in</p>
+                </a>
+                <button class = "SignUpBtn">SIGN UP</button>
+            </div>
         </div>
     </header>
     <main>
+        <section1>
+            <div class = "section1Div">
+                <div style = "display:flex; flex-direction: row; gap: 2rem">
+                    <div class = "pictureStyle">
+                        <img src="Materials/Height.svg" style = "object-fit: contain;">
+                    </div>
+                    <div  style = "display:flex; flex-direction: column; gap: 0.1rem">
+                    <h2>Body measurement tracking</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi</p> 
+                    </div>
+                </div>
+                <div style = "display:flex; flex-direction: row; gap: 2rem">
+                    <div class = "pictureStyle">
+                        <img src="Materials/Closet.svg">
+                    </div>
+
+                    <div style = "display:flex; flex-direction: column">
+                        <h2>In home trial of clothes and closet</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi</p>
+                    </div>
+                     
+                </div>
+                <img src = "Materials/Telephone.png">
+            </div>
+        </section1>
         <section2 class = "section2">
-            <forms action="//httpbin.org/post" name = "Keyboard Customizing" method = "POST" data-netlify = "true">
+            
+            <form action="//httpbin.org/post" name = "Keyboard Customizing" method = "POST">
                 <fieldset>
                     <legend style = "text-align: center">CUSTOM YOUR OWN DEVICE!</legend>
+
                     <div>
-                        <label class = "CustomLabel">
+                        <label>
                             <p>Your Name</p>
                         </label>
-                        <input type = "text" name = "name" placeholder = "John Smith" required>
+                        <input class = "CustomInput" type = "text" name = "name" placeholder = "John Smith" required>
                     </div>
     
                     <div>
                         <label>
                             <p>Your Age</p>
                         </label>
-                        <input  type = "value" name = "age" placeholder = "18" required>
+                        <input class = "CustomInput" type = "value" name = "age" placeholder = "18" required>
                     </div>  
-    
+
                     <div style = "display: flex; flex-direction: column;">
-                        <label class = "CustomLabel"><p>Choose your equipment</p></label>
-                        <select style = "width:30%" name = "Switch Brand" required>
+                        <label><p>Choose your equipment</p></label>
+                        <select style = "width:auto" name = "Switch Brand" required>
                             <option value="Default">Select a Switch Brand</option>
                             <option value="Cherry MX">Cherry MX</option>
                             <option value="Topre">Topre</option>
@@ -64,34 +102,36 @@
                             <option value="Kailh">Kailh</option>
                         </select>
                     </div>
-    
+
                     <div style = "display: flex; flex-direction: column;">
                         <label><p>Choose your type of keys</p></label>
     
-                        <div style = "display: flex; flex-direction: row; gap:20px">
-                            <input  type = "radio" name = "Key Type" required>
+                        <div style = "display: flex; flex-direction: row; gap:2rem">
+                            <input  type = "radio" name = "Key Type" value = "Tactile" required>
                             <label>
                                 <p>Tactile</p>
                             </label>
                         </div>
     
-                        <div style = "display: flex; flex-direction: row; gap:20px">
-                            <input  type = "radio" name = "Key Type" required>
+                        <div style = "display: flex; flex-direction: row; gap:2rem">
+                            <input  type = "radio" name = "Key Type" value = "Linear" required>
                             <label>
                                 <p>Linear</p>
                             </label>
                         </div>
     
-                        <div style = "display: flex; flex-direction: row; gap:20px">
-                            <input  type = "radio" name = "Key Type" required>
+                        <div style = "display: flex; flex-direction: row; gap:2rem">
+                            <input  type = "radio" name = "Key Type" value = "Clicking" required>
                             <label>
                                 <p>Clicking</p>
                             </label>
                         </div>
-        
                     </div>
                 
-                    <button class = "FormBtn" type = "submit"> GET IT!<span class="material-symbols-outlined">done</span></button>
+                    <button class = "FormBtn" type = "submit">
+                        GET
+                        <span class="material-symbols-outlined">done</span>
+                    </button>
                 </fieldset>
         </section2>
         

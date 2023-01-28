@@ -17,11 +17,43 @@ p{
     color:white;
 }
 
+h2{
+    font-size: 2rem;
+    font-weight: 900;
+    color:white;
+}
+
+.burger{
+    color:white;
+    display: flex;
+    width: 10%;
+    height: 15%;
+    margin: 3rem;
+}
+
+.navlist{
+    color:white;
+    font-size: 3rem;
+    font-weight: 400;
+    display: none;
+    gap: 2rem;
+    margin: 3rem;
+    width: auto;
+    flex-direction: row;
+    align-content: flex-start;
+    list-style-type: none;
+}
+
+.LogIn{
+    color: white;
+
+}
+
 .identify{
     margin-top: 1.4rem;
     display:flex;
     flex-direction: row;
-    float:right;
+    justify-content: flex-end;
     gap:1.7rem;
 }
 
@@ -36,6 +68,13 @@ p{
     align-items: center;
     font-size: 1.4rem;
     font-weight: bolder;
+}
+
+.section1Div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .section2{
@@ -60,6 +99,15 @@ fieldset{
     min-width: 321px;
 }
 
+.pictureStyle{
+    display:flex;
+    justify-content:center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 3rem;
+    background: white;
+    padding: 0.5rem;
+}
 
 .FormBtn{
     background-color:rgb(156, 33, 160);
@@ -73,7 +121,8 @@ fieldset{
     border-style: solid;
 }
 
-.CustomLabel{
+.CustomInput{
+    border-radius: 1rem;
     border-color: #2A2A2A;
     border-width: 3px;
 }
@@ -85,10 +134,61 @@ fieldset{
     cursor: pointer;
 }
 
-.CustomLabel:hover{
+.CustomInput:hover{
     border-color: #cc10dd;
     border-width: 5px;
 }
 
+.LogIn:hover{
+    transform: scale(1.5);
+    background-color: gold;
+    transition-duration: 250ms;
+    cursor: pointer;
+}
+
+.SignUpBtn:hover{
+
+    transform: scale(1.25);
+    background-color: gold;
+    transition-duration: 250ms;
+    cursor: pointer;
+
+}
+
+@media all and (min-width:500px) and (max-width:800px){
+
+    .navlist{
+        display:flex;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    fieldset{
+        font-size: 2rem;
+    }
+}
+@media all and (min-width:800px){
+
+    fieldset{
+        font-size: 3rem;
+    }
+
+    .Formbuttom{
+        width: 20rem;
+        height: 10rem;
+        border-radius: 5rem;
+    }
+
+    .navlist{
+        display:flex;
+    }
+
+    .burger{
+        display: none;
+    }
+
+}
 
 
