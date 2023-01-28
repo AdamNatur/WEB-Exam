@@ -13,6 +13,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -24,7 +36,66 @@
         </div>
     </header>
     <main>
-        <section1></section1>
+        <section2 class = "section2">
+            <forms action="//httpbin.org/post" name = "Keyboard Customizing" method = "POST" data-netlify = "true">
+                <fieldset>
+                    <legend style = "text-align: center">CUSTOM YOUR OWN DEVICE!</legend>
+                    <div>
+                        <label class = "CustomLabel">
+                            <p>Your Name</p>
+                        </label>
+                        <input type = "text" name = "name" placeholder = "John Smith" required>
+                    </div>
+    
+                    <div>
+                        <label>
+                            <p>Your Age</p>
+                        </label>
+                        <input  type = "value" name = "age" placeholder = "18" required>
+                    </div>  
+    
+                    <div style = "display: flex; flex-direction: column;">
+                        <label class = "CustomLabel"><p>Choose your equipment</p></label>
+                        <select style = "width:30%" name = "Switch Brand" required>
+                            <option value="Default">Select a Switch Brand</option>
+                            <option value="Cherry MX">Cherry MX</option>
+                            <option value="Topre">Topre</option>
+                            <option value="Razer">Razer</option>
+                            <option value="Kailh">Kailh</option>
+                        </select>
+                    </div>
+    
+                    <div style = "display: flex; flex-direction: column;">
+                        <label><p>Choose your type of keys</p></label>
+    
+                        <div style = "display: flex; flex-direction: row; gap:20px">
+                            <input  type = "radio" name = "Key Type" required>
+                            <label>
+                                <p>Tactile</p>
+                            </label>
+                        </div>
+    
+                        <div style = "display: flex; flex-direction: row; gap:20px">
+                            <input  type = "radio" name = "Key Type" required>
+                            <label>
+                                <p>Linear</p>
+                            </label>
+                        </div>
+    
+                        <div style = "display: flex; flex-direction: row; gap:20px">
+                            <input  type = "radio" name = "Key Type" required>
+                            <label>
+                                <p>Clicking</p>
+                            </label>
+                        </div>
+        
+                    </div>
+                
+                    <button class = "FormBtn" type = "submit"> GET IT!<span class="material-symbols-outlined">done</span></button>
+                </fieldset>
+        </section2>
+        
+        </forms>
     </main>
 </body>
 </html>
