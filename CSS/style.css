@@ -1,15 +1,41 @@
 :root{
     font-family: 'Barlow', sans-serif;
-    --main-color:#2A2A2A;
-    --main-color-reverse:#FFFFFF;
+    --main-color:#FFFFFF;
+    --main-color-reverse:#2A2A2A;
     font-size: 62.5%;
     font-weight: 400;
+    background: #1E1E1E;
 }
 
 body{
     box-sizing:border-box;
-    background-color:#0B1C47;
 }
 
+p{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color:white;
+}
+
+.identify{
+    margin-top: 1.4rem;
+    display:flex;
+    flex-direction: row;
+    float:right;
+    gap:1.7rem;
+}
+
+.SignUpBtn{
+    width:10rem;
+    height:5rem;
+    border-radius: 2rem;
+    background:#1EE1B3;
+    color:#2A2A2A;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
 
 
